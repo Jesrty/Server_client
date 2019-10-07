@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Client {
 
+
+    //HEJ JESPER
     ClientConnection cliCon;
     private String clientName;
     boolean shouldRun = true;
