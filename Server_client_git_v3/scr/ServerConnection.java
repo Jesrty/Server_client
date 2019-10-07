@@ -57,6 +57,7 @@ public class ServerConnection extends Thread{
                         }
                     }
                     if (namecheck) {
+                        sendToClient("J_OK");
                         server.addNameList(splitToName[0]);
                     }
                 }
