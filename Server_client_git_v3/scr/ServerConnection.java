@@ -66,6 +66,12 @@ public class ServerConnection extends Thread{
                     server.removeNameList(splitToName[0]);
                     server.removeConnectionList(this);
                 }
+                else if(textIn.contains(": LIST")){
+                    for(String s : server.nameList){
+                        sendToClient(s);
+                    }
+                }
+
                 else {
                     sendToAllClient(textIn);
                 }
